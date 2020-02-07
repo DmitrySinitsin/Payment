@@ -1,3 +1,4 @@
+<?php require_once 'inc/functions.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -140,19 +141,19 @@
                 <form id="buy" method="post">
                     <div class="form-group">
                         <label for="name">Ваше имя</label>
-                        <input type="name" class="form-control" id="name" placeholder="Ваше имя">
+                        <input type="name" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                         <label for="product">Выбранный товар</label>
-                        <input type="text" class="form-control" id="product" readonly>
+                        <input type="text" name="product" class="form-control" id="product" readonly>
                     </div>
                     <div class="form-group">
                         <label for="price">Цена</label>
-                        <input type="text" class="form-control" id="price" readonly>
+                        <input type="text" name="price" class="form-control" id="price" readonly>
                     </div>
                     <button type="submit" class="btn btn-primary">Купить</button>
                 </form>
